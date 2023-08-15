@@ -1,0 +1,92 @@
+import React from 'react';
+import './AmazonNavbar.css'; // Import your CSS file
+
+const AmazonNavbar = () => {
+  return (
+    <div id="nav-main">
+      <div className="nav-left">
+        {/* Hamburger Menu */}
+        <div id="nav-hamburger-menu" role="button" aria-label="Open Menu">
+          <i className="hm-icon nav-sprite"></i>
+          <span className="hm-icon-label">All</span>
+        </div>
+        
+        {/* Other Nav Links */}
+        <a href="/b/32702023031?node=32702023031&amp;ld=AZINSOANavDesktop_T3&amp;ref_=nav_cs_sell_T3" className="nav-a">Sell</a>
+        {/* ... Add more links here ... */}
+        
+        {/* Amazon miniTV */}
+        <a href="/minitv?ref_=nav_avod_desktop_topnav" className="nav-a">Amazon miniTV</a>
+      </div>
+      <div className="nav-fill">
+        {/* ... Add more links here ... */}
+      </div>
+      <div className="nav-right">
+        {/* Image tag */}
+        <img
+          alt="Amazon App"
+          src="https://m.media-amazon.com/images/G/31/IN-hq/2021/img/Mobile_Traffic_/XCM_Manual_1321458_1651511_IN_3781247_400x39_en_IN._CB655944656_.jpg"
+        />
+        {/* ... Add more content on the right if needed ... */}
+      </div>
+    </div>
+  );
+};
+
+export default AmazonNavbar;
+
+
+
+
+
+
+//css for this
+
+
+/* Navbar Container */
+#nav-main {
+  background-color: #232f3e;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  color: #fff;
+}
+
+/* Left Section */
+.nav-left {
+  display: flex;
+  align-items: center;
+}
+
+.hm-icon {
+  /* Define your styles for the hamburger icon */
+  /* Example: */
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.hm-icon-label {
+  font-size: 14px;
+}
+
+/* Center Section */
+.nav-fill {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Right Section */
+.nav-right {
+  display: flex;
+  align-items: center;
+}
+
+/* Position the image to the right corner */
+.nav-right img {
+  margin-left: auto;
+}
+
+/* Optional: Adjust these styles as needed for your specific use case */
+/* ... Add the rest of your CSS styles here ... */
